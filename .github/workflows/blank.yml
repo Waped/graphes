@@ -11,9 +11,9 @@ jobs:
     - name: Changements de droits
       run: chmod +x graphviz1.sh
     - name: Lancement graphviz
-      run: ./graphviz1.sh g1
+      run: ./graphviz2.sh g1
     - name: upload du resultat
       uses: actions/upload-artifact@v4
       with:
         name: nom arbitraire
-        path: g1.svg
+        path: "*.svg"
